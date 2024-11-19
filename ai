@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+#include <string.h>
+
+
+
+int calcular(int valor1,int valor2, int num){
+	
+	int resultado;
+	int p = 0;
+	printf("Insira o resultado:\n");
+	scanf("%d", &resultado);
+	switch(num)
+	{
+		case 0:
+		 if(resultado==somar(valor1,valor2)){
+		   printf("Parabens, Voce acertou!!!");
+		   p += 1;
+		 }else {
+		    printf("voce errou, contineu tentando!");
+		}
+		break;
+		
+		case 1:
+		 if(resultado==subtracao(valor1,valor2)){
+		 	printf("Parabens, Voce acertou!!!");
+		 	p += 1;
+		 }else {
+		 	printf("Voce errou, continue tentando!");
+		 }
+		break;
+		
+		case 2:
+		if(resultado==multiplicacao(valor1,valor2)){
+		 	printf("Parabens, Voce acertou!!!");
+		 	p += 1;
+		 }else {
+		 	printf("Voce errou, continue tentando!");
+		 }
+		break;
+		
+		case 3:
+		if(resultado==divisao(valor1,valor2)){
+		 	printf("Parabens, Voce acertou!!!");
+		 	p += 1;
+		 }else {
+		 	printf("Voce errou, continue tentando!");
+		 }
+		break;
+		
+		
+		return p;
+	}
+	
+	
+	
+	
+	
+}
